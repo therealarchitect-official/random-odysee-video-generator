@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Odysee Generator</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #grid {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: #000;
+    }
+    .frame {
+      position: absolute;
+      display: block;
+      border: 0;
+      background: #000;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      pointer-events: auto;
+    }
+    .frame.visible {
+      opacity: 1;
+    }
+    .frame.loading {
+      background: radial-gradient(circle at center, #111 0%, #000 70%);
+    }
+  </style>
+</head>
+<body>
+  <div id="grid"></div>
+
+  <script src="./websites.js"></script>
+  <script>
+    (function () {
+      const grid = document.getElementById("grid");
+      const base = window.odyseeVideos || [];
+
+      function shuffle(array) {
+        const arr = array.slice();
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+      }
+
+      function buildLayout() {
+        const videos = shuffle(base);
+        const count = Math.min(videos.length, 220);
+
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        grid.innerHTML = "";
+
+        const perRow = Math.max(1, Math.min(12, Math.round(viewportWidth / 320)));
+        const aspect = 16 / 9;
+
+        const maxCells = Math.max(1, Math.ceil(Math.sqrt(count * 1.3)));
+        const cols = Math.max(2, Math.min(perRow, maxCells));
+        const rows = Math.ceil(count / cols);
+
+        const cellW = viewportWidth / cols;
+        const cellH = viewportHeight / rows;
+
+        const iframeW = Math.max(150, cellW * 0.96);
+        const iframeH = Math.max(90, cellH * 0.96);
+
+        const total = Math.min(count, videos.length);
+
+        for (let i = 0; i < total; i++) {
+          const item = videos[i];
+          const frame = document.createElement("iframe");
+          frame.className = "frame";
+          frame.src = item.url + (item.url.includes("?") ? "&" : "?") + "autoplay=1&mute=1&controls=0&showinfo=0&rel=0";
+          frame.title = item.name;
+          frame.allow = "autoplay; fullscreen";
+          frame.setAttribute("allowfullscreen", "true");
+          frame.setAttribute("loading", "lazy");
+          frame.style.width = iframeW + "px";
+          frame.style.height = iframeH + "px";
+          frame.style.left = (i % cols) * cellW + (cellW - iframeW) / 2 + "px";
+          frame.style.top = Math.floor(i / cols) * cellH + (cellH - iframeH) / 2 + "px";
+
+          frame.addEventListener("load", () => {
+            frame.classList.add("visible");
+          });
+
+          grid.appendChild(frame);
+        }
+      }
+
+      function init() {
+        if (!base.length) {
+          grid.innerHTML = "<div style='color:white;padding:20px;font-size:18px;'>No Odysee videos loaded.</div>";
+          return;
+        }
+
+        buildLayout();
+      }
+
+      window.addEventListener("resize", buildLayout);
+      init();
+    })();
+  </script>
+</body>
+</html>
