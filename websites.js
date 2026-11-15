@@ -1,40 +1,8 @@
+// Only list real, distinct Odysee video URLs here. index.html deduplicates URLs
+// before choosing one, so repeating an entry cannot increase its odds.
 window.odyseeVideos = [
-  { name: "Try Not To Laugh Challenge 2025 😂🐾 Funniest Cats & Dogs Ever part_61", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Funny Animals Compilation 2025 🐶😹 Best Pet Laughs", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Epic Cat Fail Compilation 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Dog Laughs and Zoomies 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Best Comedy Skits 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Technology News Today 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "AI Breakthroughs Explained 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Gaming Highlights 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Science Facts That Shock You", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Cooking Chaos 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-
-  { name: "Funny Animals Compilation 2025 🐶😹 Best Pet Laughs", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Epic Cat Fail Compilation 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Dog Laughs and Zoomies 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Best Comedy Skits 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Technology News Today 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "AI Breakthroughs Explained 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Gaming Highlights 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Science Facts That Shock You", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Cooking Chaos 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-
-  { name: "Epic Laughs Compilation 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "The Funniest Dogs Ever 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Cats vs Dogs 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Funny Babies and Pets 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Random Comedy Gold 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "TheBest of Internet Cats 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Bloopers, Fails, and Giggles 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Laugh Till It Hurts 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-
-  { name: "Tech Talk 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "The Future of AI 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Next Gen Gadgets 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Smart Tech Reviews 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Cybersecurity Explained 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Space Tech Weekly 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Crypto Market Update 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" },
-  { name: "Gaming Reviews 2025", url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD" }
+  {
+    name: "Try Not To Laugh Challenge 2025 😂🐾 Funniest Cats & Dogs Ever part_61",
+    url: "https://odysee.com/%24/embed/%40FunnyChannel%3Ad2%2FLap-Part-617%3Ac?r=9xATNFc2PNgcFZraUMYZEEK1XnfwGTcD"
+  }
 ];
