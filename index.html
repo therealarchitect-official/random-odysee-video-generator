@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Odysee Video</title>
+</head>
+<body style="margin:0; overflow:hidden;">
+  <iframe
+    id="video"
+    title="Random Odysee video"
+    allow="autoplay; fullscreen"
+    allowfullscreen
+    frameborder="0"
+    style="position:fixed; inset:0; width:100vw; height:100vh; border:0;"
+  ></iframe>
+  <script src="websites.js"></script>
+  <script>
+    const videos = window.odyseeVideos || [];
+    if (videos.length) {
+      const video = videos[Math.floor(Math.random() * videos.length)];
+      const frame = document.getElementById("video");
+      frame.src = video.url;
+      frame.title = video.name;
+    }
+  </script>
+</body>
+</html>
